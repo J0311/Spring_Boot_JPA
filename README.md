@@ -1,6 +1,6 @@
 # SPRING BOOT DATA/JPA
 
-## Simple project where we utitlize JPA repository to structure CRUD commands.
+## Simple project where I utitlize JPA repository to structure CRUD commands.
 
 ## Display of how Java Peristence API works.
 
