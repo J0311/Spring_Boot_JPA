@@ -47,6 +47,7 @@ public class StudentController {
             @PathVariable("studentId") Long studentId) {
         studentService.deleteStudent(studentId);
     }
+    
     /**
     Mapped to updateStudent method found in our StudentService class.
     Will locate student predicated on Id and update name and email.
@@ -60,6 +61,4 @@ public class StudentController {
             @RequestParam(required = false) String email){
         studentService.updateStudent(studentId, name, email);
     }
-
 }
-
