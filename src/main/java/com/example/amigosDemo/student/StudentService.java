@@ -18,10 +18,8 @@ public class StudentService {
         this.studentRepository = studentRepository;
     }
 
-
     public List<Student> getStudents() {
         return studentRepository.findAll();
-
     }
 
     /**
@@ -36,7 +34,6 @@ public class StudentService {
            throw new IllegalStateException("email taken");
        }
         studentRepository.save(student);
-
     }
 
     /**
@@ -54,8 +51,8 @@ public class StudentService {
                     " does not exists");
         }
         studentRepository.deleteById(studentId);
-
     }
+    
     /**
     Checking whether student exists with id or we throw exception.
     If name and email is NOT null and the name and email is not equal to
@@ -78,6 +75,5 @@ public class StudentService {
         && !Objects.equals(student.getEmail(), email)){
             student.setEmail(email);
         }
-
     }
 }
